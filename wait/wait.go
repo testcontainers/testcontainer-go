@@ -19,7 +19,7 @@ type StrategyTarget interface {
 	Exec(ctx context.Context, cmd []string) (int, error)
 }
 
-func defaultStartupTimeout() time.Duration {
+func defaultTimeout() time.Duration {
 	return 60 * time.Second
 }
 
